@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.caurosel {
+  margin-top: 30px;
+  margin-left: 500px;
+}
+img {
+  width: 120vh;
+  height: 450px;
+}
+.displays {
+  border-radius: 15px;
+  display: flex;
+  overflow: hidden;
+  width: 20.3cm;
+  /* background-color: aqua; */
+}
+
+.controls {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.caurosel-btn button {
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 1px;
+}
+.next {
+  margin-left: 18cm;
+}
+.previous {
+  margin-left: 20px;
+}
