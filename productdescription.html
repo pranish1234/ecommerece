@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="carouselstyle.css" />
+    <link rel="stylesheet" href="productpreview.css" />
+    <link
+      rel="stylesheet"
+      href="fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="navbar-main">
+      <div class="search">
+        <input type="text" placeholder="search..." />
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <div class="nav-options">
+        <li>
+          <a href="home.asp"><i class="fa-solid fa-house"></i></a>
+        </li>
+        <li class="profile">
+          <i class="fa-solid fa-user"></i>
+          <div class="dropdown-content">
+            <i class="fa-solid fa-user"></i> Manage my account
+          </div>
+          <div class="dropdown-content">
+            <i class="fa-solid fa-money-bill"></i> Order History
+          </div>
+          <div class="dropdown-content">
+            <i class="fa-solid fa-heart"></i> Wishlist
+          </div>
+        </li>
+        <li>
+          <a href="cart.asp"><i class="fa-solid fa-cart-shopping"></i></a>
+        </li>
+      </div>
+    </div>
+
+    <div class="everything">
+      <div class="preview">
+        <div class="displays">
+          <div class="caurosel-item">
+            <img
+              src="https://thumbs.dreamstime.com/z/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg"
+              alt="img1"
+            />
+          </div>
+          <div class="caurosel-item">
+            <img
+              src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?w=826&t=st=1702384752~exp=1702385352~hmac=7b5628e39ebf9dd13e881944f8ce063892634a7181bc0b40985ec156ecdb72be"
+              alt="img2"
+            />
+          </div>
+          <div class="caurosel-item">
+            <img
+              src="https://img.freepik.com/free-photo/green-field-tree-blue-skygreat-as-backgroundweb-banner-generative-ai_1258-153069.jpg?w=740&t=st=1702384772~exp=1702385372~hmac=d8fd25fbbccbe160de15b54a2dcf2523d35c325af22cdd7c204ee87f02fdf784"
+              alt="img2"
+            />
+          </div>
+        </div>
+
+        <div class="controls">
+          <div class="caurosel-btn">
+            <button class="previous" onclick="prevslide()">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="next" onclick="nextslide()">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="details">
+        <br />
+        <h1 class="title" style="margin-left: 10px">
+          Title of the product:product123
+        </h1>
+        <br />
+        <div class="coloumn134">
+          <h3 class="price">price:$120000</h3>
+
+          <br /><button class="prev"><i class="fa-solid fa-plus"></i></button>
+          <input type="text" class="qty" /><button class="next">
+            <i class="fa-solid fa-minus"></i>
+          </button>
+        </div>
+        <br />
+        <h4 style="margin-left: 10px">Product description</h4>
+        <div class="decs">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil,
+          pariatur? Sunt incidunt modi debitis eveniet adipisci pariatur iure
+          magnam, unde beatae doloribus sed recusandae, praesentium inventore
+          dolorem aperiam fugit minus cumque ratione? Nostrum animi veniam fugit
+          tenetur deserunt. Maxime, nam!
+        </div>
+
+        <br />
+        <button class="btn">Add to Cart</button>
+        <button class="btn">Buy now</button>
+      </div>
+    </div>
+    <div class="reviews">
+      <h1>Reviews section here</h1>
+    </div>
+  </body>
+  <script src="carouselscript.js"></script>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login/Signup Page</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f8f8f8;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        background-color: orangered;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        width: 300px;
+        text-align: center;
+      }
+
+      h2 {
+        color: white;
+        margin-bottom: 20px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      label {
+        margin-bottom: 8px;
+        color: white;
+        font-size: 14px;
+        text-align: left;
+      }
+
+      input {
+        padding: 10px;
+        margin-bottom: 16px;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+
+      input[type="submit"] {
+        background-color: white;
+        color: orangered;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #eee;
+      }
+
+      .signup-link {
+        margin-top: 15px;
+        font-size: 14px;
+        color: white;
+      }
+
+      .signup-link a {
+        color: white;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Login/Signup</h2>
+      <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <input type="submit" value="Login" />
+      </form>
+
+      <form id="signup-form" style="display: none">
+        <label for="signup-username">Username:</label>
+        <input
+          type="text"
+          id="signup-username"
+          name="signup-username"
+          required
+        />
+
+        <label for="signup-password">Password:</label>
+        <input
+          type="password"
+          id="signup-password"
+          name="signup-password"
+          required
+        />
+
+        <input type="submit" value="Signup" />
+      </form>
+
+      <div class="signup-link">
+        <a href="javascript:void(0);" onclick="toggleForms()"
+          >Switch to Signup</a
+        >
+      </div>
+    </div>
+
+    <script>
+      function toggleForms() {
+        var loginForm = document.getElementById("login-form");
+        var signupForm = document.getElementById("signup-form");
+
+        if (loginForm.style.display === "none") {
+          loginForm.style.display = "block";
+          signupForm.style.display = "none";
+        } else {
+          loginForm.style.display = "none";
+          signupForm.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

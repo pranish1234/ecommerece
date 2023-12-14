@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.preview {
+  margin-top: 10px;
+  width: 43%;
+}
+img {
+  width: 90vh;
+  height: 400px;
+}
+.displays {
+  border-radius: 15px;
+  display: flex;
+  overflow: hidden;
+  width: 15cm;
+}
+
+.controls {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.caurosel-btn button {
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 1px;
+}
+.next {
+  margin-left: 12cm;
+}
+.previous {
+  margin-left: 20px;
+}
+
+.everything {
+  display: flex;
+}
+.title {
+  font-size: 7vh;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+.price {
+  font-size: 30px;
+  display: flex;
+  width: 30%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.prev {
+  margin-left: 20px;
+  background-color: orangered;
+  border: 0cap;
+  width: 8%;
+}
+.next {
+  background-color: orangered;
+  width: 8%;
+  border: 0cap;
+  margin-left: 0px;
+}
+.qty {
+  width: 40px;
+}
+.prev:hover {
+  cursor: pointer;
+  background-color: rgb(216, 86, 39);
+}
+.next:hover {
+  background-color: rgb(216, 86, 39);
+  cursor: pointer;
+}
+.coloumn134 {
+  display: flex;
+  margin-left: 10px;
+}
+.btn {
+  color: white;
+  border: 0px;
+  border-radius: 8px;
+  background-color: rgb(216, 86, 39);
+  height: 8vh;
+  width: 300px;
+  margin-left: 10px;
+}
+.decs {
+  margin-left: 10px;
+  font-style: italic;
+}
